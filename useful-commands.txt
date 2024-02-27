@@ -2,3 +2,17 @@
 cat /proc/device-tree/model
 returns the model in the following format "Raspberry Pi 3 Model B Rev 1.2" or "Raspberry 4 Model B Rev 1.1"
 
+WiFi connect
+
+iwconfig
+
+sudo ip link set dev wlan0 up
+
+sudo iwlist wlan0 scan | grep ESSID
+
+optional 
+sudo apt install wpasupplicant
+
+wpa_passphrase Treehouse your-wifi-passphrase | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+
+sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -i wlan0
