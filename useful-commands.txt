@@ -1,7 +1,8 @@
-- Check Raspberry Pi model command
-cat /proc/device-tree/model
-returns the model in the following format "Raspberry Pi 3 Model B Rev 1.2" or "Raspberry 4 Model B Rev 1.1"
+Check Raspberry Pi model command
+- cat /proc/device-tree/model
+- returns the model in the following format "Raspberry Pi 3 Model B Rev 1.2" or "Raspberry 4 Model B Rev 1.1"
 
+<<<<<<< Updated upstream
 WiFi connect
 
 iwconfig
@@ -16,3 +17,25 @@ sudo apt install wpasupplicant
 wpa_passphrase Treehouse your-wifi-passphrase | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 
 sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -i wlan0
+=======
+Check CPU temperature via terminal
+Source: https://phoenixnap.com/kb/linux-cpu-temp
+- install via: sudo apt install lm-sensors
+- To check SSD and hard drive temperatures, execute the following command: sudo hddtemp /dev/sda
+- To see which system components you can monitor, run: sudo sensors-detect
+- To run the sensors command repeatedly and get real-time data in the terminal, execute the following command: watch sensors
+
+Check GPIO status
+- The "raspi-gpio get" command will list the status of all GPIOs (not just those available on the connector).
+- Limit it with "raspi-gpio get 2-27" to just list the ones available for general use.
+
+Command: echo "pud 4 d" >/dev/pigpio
+Return: GPIO 4: level=0 fsel=0 func=INPUT pull=DOWN
+
+route-n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface    
+default         10.1.0.1        0.0.0.0         UG    600    0        0 wlo1    
+10.1.0.0        *               255.255.248.0   U     600    0        0 wlo1    
+link-local      *               255.255.0.0     U     1000   0        0 wlo1```
+>>>>>>> Stashed changes

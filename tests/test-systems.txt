@@ -1,0 +1,73 @@
+test-systems.txt
+
+Test Setup - 2024-02-22
+
+  `.::///+:/-.        --///+//-:``    pi@delta 
+ `+oooooooooooo:   `+oooooooooooo:    -------- 
+  /oooo++//ooooo:  ooooo+//+ooooo.    OS: Raspbian GNU/Linux 10 (buster) armv7l 
+  `+ooooooo:-:oo-  +o+::/ooooooo:     Host: Raspberry Pi 3 Model B Rev 1.2 
+   `:oooooooo+``    `.oooooooo+-      Kernel: 4.19.66-v7+ 
+     `:++ooo/.        :+ooo+/.`       Uptime: 32 mins 
+        ...`  `.----.` ``..           Packages: 730 (dpkg) 
+     .::::-``:::::::::.`-:::-`        Shell: bash 5.0.3 
+    -:::-`   .:::::::-`  `-:::-       Terminal: /dev/pts/0 
+   `::.  `.--.`  `` `.---.``.::`      CPU: BCM2835 (4) @ 1.200GHz 
+       .::::::::`  -::::::::` `       Memory: 59MiB / 926MiB 
+ .::` .:::::::::- `::::::::::``::.
+-:::` ::::::::::.  ::::::::::.`:::-                           
+::::  -::::::::.   `-::::::::  ::::
+-::-   .-:::-.``....``.-::-.   -::-
+ .. ``       .::::::::.     `..`..
+   -:::-`   -::::::::::`  .:::::`
+   :::::::` -::::::::::` :::::::.
+   .:::::::  -::::::::. ::::::::
+    `-:::::`   ..--.`   ::::::.
+      `...`  `...--..`  `...`
+            .::::::::::
+             `.-::::-`
+
+
+Test Setup - 2024-02-25
+
+  `.::///+:/-.        --///+//-:``    matthias@delta 
+ `+oooooooooooo:   `+oooooooooooo:    -------------- 
+  /oooo++//ooooo:  ooooo+//+ooooo.    OS: Raspbian GNU/Linux 11 (bullseye) armv 
+  `+ooooooo:-:oo-  +o+::/ooooooo:     Host: Raspberry Pi 3 Model B Rev 1.2 
+   `:oooooooo+``    `.oooooooo+-      Kernel: 6.1.21-v7+ 
+     `:++ooo/.        :+ooo+/.`       Uptime: 1 day, 6 hours, 58 mins 
+        ...`  `.----.` ``..           Packages: 1427 (dpkg) 
+     .::::-``:::::::::.`-:::-`        Shell: bash 5.1.4 
+    -:::-`   .:::::::-`  `-:::-       Terminal: /dev/pts/0 
+   `::.  `.--.`  `` `.---.``.::`      CPU: BCM2835 (4) @ 1.200GHz 
+       .::::::::`  -::::::::` `       Memory: 152MiB / 921MiB 
+ .::` .:::::::::- `::::::::::``::.
+-:::` ::::::::::.  ::::::::::.`:::-                           
+::::  -::::::::.   `-::::::::  ::::                           
+-::-   .-:::-.``....``.-::-.   -::-
+ .. ``       .::::::::.     `..`..
+   -:::-`   -::::::::::`  .:::::`
+   :::::::` -::::::::::` :::::::.
+   .:::::::  -::::::::. ::::::::
+    `-:::::`   ..--.`   ::::::.
+      `...`  `...--..`  `...`
+            .::::::::::
+             `.-::::-`
+
+
+       _,met$$$$$gg.          matthias@echelon 
+    ,g$$$$$$$$$$$$$$$P.       ---------------- 
+  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 12 (bookworm) aarch64 
+ ,$$P'              `$$$.     Host: Raspberry Pi 5 Model B Rev 1.0 
+',$$P       ,ggs.     `$$b:   Kernel: 6.1.0-rpi8-rpi-2712 
+`d$$'     ,$P"'   .    $$$    Uptime: 9 mins 
+ $$P      d$'     ,    $$P    Packages: 689 (dpkg) 
+ $$:      $$.   -    ,d$$'    Shell: bash 5.2.15 
+ $$;      Y$b._   _,d$P'      Terminal: /dev/pts/0 
+ Y$$.    `.`"Y$$$$P"'         CPU: (4) @ 2.400GHz 
+ `$$b      "-.__              Memory: 133MiB / 8053MiB 
+  `Y$$
+   `Y$$.                                              
+     `$$b.                                            
+       `Y$$b.
+          `"Y$b._
+              `"""
