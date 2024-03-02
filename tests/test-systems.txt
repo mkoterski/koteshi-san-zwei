@@ -1,6 +1,6 @@
 test-systems.txt
 
-Test Setup - 2024-02-22
+Test Setup - 2024-03-02
 
   `.::///+:/-.        --///+//-:``    pi@delta 
  `+oooooooooooo:   `+oooooooooooo:    -------- 
@@ -27,7 +27,6 @@ Test Setup - 2024-02-22
              `.-::::-`
 
 
-Test Setup - 2024-02-25
 
   `.::///+:/-.        --///+//-:``    matthias@delta 
  `+oooooooooooo:   `+oooooooooooo:    -------------- 
@@ -52,6 +51,56 @@ Test Setup - 2024-02-25
       `...`  `...--..`  `...`
             .::::::::::
              `.-::::-`
+
+
+
+  `.::///+:/-.        --///+//-:``    matthias@delta 
+ `+oooooooooooo:   `+oooooooooooo:    -------------- 
+  /oooo++//ooooo:  ooooo+//+ooooo.    OS: Raspbian GNU/Linux 11 (bullseye) armv7l 
+  `+ooooooo:-:oo-  +o+::/ooooooo:     Host: Raspberry Pi 3 Model B Plus Rev 1.3 
+   `:oooooooo+``    `.oooooooo+-      Kernel: 6.1.21-v7+ 
+     `:++ooo/.        :+ooo+/.`       Uptime: 12 mins 
+        ...`  `.----.` ``..           Packages: 1426 (dpkg) 
+     .::::-``:::::::::.`-:::-`        Shell: bash 5.1.4 
+    -:::-`   .:::::::-`  `-:::-       Terminal: /dev/pts/0 
+   `::.  `.--.`  `` `.---.``.::`      CPU: BCM2835 (4) @ 1.400GHz 
+       .::::::::`  -::::::::` `       Memory: 151MiB / 921MiB 
+ .::` .:::::::::- `::::::::::``::.
+-:::` ::::::::::.  ::::::::::.`:::-                           
+::::  -::::::::.   `-::::::::  ::::                           
+-::-   .-:::-.``....``.-::-.   -::-
+ .. ``       .::::::::.     `..`..
+   -:::-`   -::::::::::`  .:::::`
+   :::::::` -::::::::::` :::::::.
+   .:::::::  -::::::::. ::::::::
+    `-:::::`   ..--.`   ::::::.
+      `...`  `...--..`  `...`
+            .::::::::::
+             `.-::::-`
+
+
+
+            .-/+oossssoo+/-.               ubuntu@aeon 
+        `:+ssssssssssssssssss+:`           ----------- 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 22.04.4 LTS aarch64 
+    .ossssssssssssssssssdMMMNysssso.       Host: Raspberry Pi 4 Model B Rev 1.1 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 5.15.0-1047-raspi 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 5 days, 21 hours, 48 mins 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 1054 (dpkg), 4 (snap) 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.1.16 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Terminal: /dev/pts/0 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   CPU: BCM2835 (4) @ 1.500GHz 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   Memory: 220MiB / 3790MiB 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.                           
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/                            
+  +sssssssssdmydMMMMMMMMddddyssssssss+
+   /ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.
+
 
 
        _,met$$$$$gg.          matthias@echelon 

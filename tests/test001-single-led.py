@@ -1,3 +1,5 @@
+# might be erroneous
+
 import RPi.GPIO as GPIO
 import time
 
@@ -9,3 +11,4 @@ GPIO.output(17,GPIO.HIGH)
 time.sleep(10)
 print "LED off"
 GPIO.output(17,GPIO.LOW)
+GPIO.cleanup()
