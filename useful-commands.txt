@@ -2,28 +2,25 @@ Check Raspberry Pi model command
 - cat /proc/device-tree/model
 - returns the model in the following format "Raspberry Pi 3 Model B Rev 1.2" or "Raspberry 4 Model B Rev 1.1"
 
-<<<<<<< Updated upstream
+ d
 WiFi connect
 
-iwconfig
+$ nmcli d
+DEVICE             TYPE      STATE         CONNECTION
+...
+wlan0              wifi      disconnected     --
 
-sudo ip link set dev wlan0 up
+sudo nmcli r wifi on
 
-sudo iwlist wlan0 scan | grep ESSID
+$ nmcli d wifi list
+*  SSID           MODE   CHAN  RATE       SIGNAL  BARS  SECURITY
+   ...
+   my_wifi      Infra  5     54 Mbit/s  89      ▂▄▆█  WPA2
 
-optional 
-sudo apt install wpasupplicant
+sudo nmcli d wifi connect my_wifi password <password>
 
-wpa_passphrase Treehouse your-wifi-passphrase | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
 
-sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -i wlan0
 =======
-Check CPU temperature via terminal
-Source: https://phoenixnap.com/kb/linux-cpu-temp
-- install via: sudo apt install lm-sensors
-- To check SSD and hard drive temperatures, execute the following command: sudo hddtemp /dev/sda
-- To see which system components you can monitor, run: sudo sensors-detect
-- To run the sensors command repeatedly and get real-time data in the terminal, execute the following command: watch sensors
 
 Check GPIO status
 - The "raspi-gpio get" command will list the status of all GPIOs (not just those available on the connector).
@@ -39,3 +36,11 @@ default         10.1.0.1        0.0.0.0         UG    600    0        0 wlo1
 10.1.0.0        *               255.255.248.0   U     600    0        0 wlo1    
 link-local      *               255.255.0.0     U     1000   0        0 wlo1```
 >>>>>>> Stashed changes
+
+
+
+
+
+
+
+/home/matthias/.config/neofetch/config.conf
