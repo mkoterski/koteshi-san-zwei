@@ -1,0 +1,59 @@
+Certainly! I've updated the script to include a function that searches for the neofetch config file in the user's home directory if it's not found in the default location. Here's the revised script:
+
+```bash
+#!/bin/bash
+
+# Function to locate and modify the neofetch config
+modify_neofetch_config() {
+    DEFAULT_CONFIG_PATH="${HOME}/.config/neofetch/config.conf"
+    echo "Searching for Neofetch config file..."
+
+    # Find the actual location of the neofetch config file
+    CONFIG_PATH=$(find ${HOME} -type f -name "config.conf" 2>/dev/null | grep -m 1 'neofetch')
+
+    if [[ -z "$CONFIG_PATH" ]]; then
+        echo "Neofetch config file not found. Please ensure Neofetch is installed."
+        exit 1
+    else
+        echo "Neofetch config file found at: $CONFIG_PATH"
+    fi
+
+    # Check if the config file is writable
+    if [[ -w "$CONFIG_PATH" ]]; then
+        sed -i 's/# info "Disk"/info "Disk"/' "$CONFIG_PATH"
+        sed -i 's/# info "Local IP"/info "Local IP"/' "$CONFIG_PATH"
+        sed -i 's/# info "Public IP"/info "Public IP"/' "$CONFIG_PATH"
+        sed -i 's/# info "Users"/info "Users"/' "$CONFIG_PATH"
+        echo "Neofetch config modified successfully."
+    else
+        echo "Insufficient permissions to modify the neofetch config."
+        exit 1
+    fi
+}
+
+# Function to display neofetch on SSH login
+display_neofetch_ssh() {
+    # Check if .bashrc is writable
+    if [[ -w "${HOME}/.bashrc" ]]; then
+        echo 'neofetch' >> "${HOME}/.bashrc"
+        echo "Neofetch will be displayed on SSH login."
+    else
+        echo "Insufficient permissions to modify .bashrc for SSH login display."
+        exit 1
+    fi
+}
+
+# Main script execution
+modify_neofetch_config
+display_neofetch_ssh
+```
+
+This script now includes a search for the `config.conf` file within the user's home directory, which should cover cases where the file location differs from the default. The script will output the actual path of the config file if found, or a message indicating that the file could not be found.
+
+To run this script, you would use the same `curl` command as before:
+
+```sh
+curl -fsSL https://DOMAIN/01-init-install.sh | sh
+```
+
+Replace `https://DOMAIN/` with your actual domain where the script is hosted. As always, exercise caution when running scripts from the internet.
